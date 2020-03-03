@@ -1,0 +1,7 @@
+2020-03-03 06:46:15 INFO  class:16 - Enter amount details time period to calculate interest: 
+2020-03-03 06:46:15 INFO  class:18 - 1. Enter value of Principle Amount: 
+2020-03-03 06:46:18 INFO  class:21 - 2. Enter value of Rate of Interest: 
+2020-03-03 06:46:20 INFO  class:24 - 3. Enter the value of time period in years for which interest is to be calculated: 
+2020-03-03 06:46:21 INFO  class:27 - 4. Number of times interest applied per time period: 
+2020-03-03 06:46:21 INFO  class:34 - Total Simple Interest Amount: 10600.0
+2020-03-03 06:46:22 INFO  class:35 - Total Compound Interest Amount: 10616.461941293835

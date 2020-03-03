@@ -1,17 +1,20 @@
 package com.epam.clean_code;
 
 import java.util.Scanner;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class App 
 {
+    public static final Logger LOGGER = LogManager.getLogger("App.class");
     public static void main( String[] args )
     {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Select material standard and full Automation if required :");
-        System.out.println("1. Standard materials with no Automation");
-        System.out.println("2. Above standard materials with no Automation");
-        System.out.println("3. High end standard materials with no Automation");
-        System.out.println("4. High end standard materials with full Automation");
+        LOGGER.info("Select material standard and full Automation if required :");
+        LOGGER.info("1. Standard materials with no Automation");
+        LOGGER.info("2. Above standard materials with no Automation");
+        LOGGER.info("3. High end standard materials with no Automation");
+        LOGGER.info("4. High end standard materials with full Automation");
         int selectedOption;
         long totalAreaOfHouse;
         boolean automated;
@@ -24,7 +27,7 @@ public class App
         else
             automated = false;
         ConstructionCostEstimator estimate = new ConstructionCostEstimator(selectedOption, totalAreaOfHouse, automated);
-        System.out.println("Cost Estimated for construction for the given details is: "+estimate.getCostEstimation());
+        LOGGER.info("Cost Estimated for construction for the given details is: "+estimate.getCostEstimation());
         sc.close();
     }
 }
